@@ -24,6 +24,9 @@
 		26722A7816BB81DE0004F205 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26722A5016BB81DD0004F205 /* Foundation.framework */; };
 		26722A8016BB81DE0004F205 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26722A7E16BB81DE0004F205 /* InfoPlist.strings */; };
 		26722A8316BB81DE0004F205 /* tweetPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26722A8216BB81DE0004F205 /* tweetPadTests.m */; };
+		26E0E6D816BC156F00266B84 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E6D716BC156F00266B84 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		26E0E6DE16BC198300266B84 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E6DD16BC198300266B84 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		26E0E6ED16BC39A600266B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6EF16BC39A600266B84 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,24 @@
 		26722A7F16BB81DE0004F205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26722A8116BB81DE0004F205 /* tweetPadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tweetPadTests.h; sourceTree = "<group>"; };
 		26722A8216BB81DE0004F205 /* tweetPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tweetPadTests.m; sourceTree = "<group>"; };
+		26E0E6D716BC156F00266B84 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		26E0E6DD16BC198300266B84 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		26E0E6DF16BC376000266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		26E0E6E016BC376000266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		26E0E6E116BC376100266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6E216BC376100266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6E316BC376900266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		26E0E6E416BC376900266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		26E0E6E516BC376900266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6E616BC376900266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6E716BC377400266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		26E0E6E816BC377400266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		26E0E6E916BC377400266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6EA16BC377400266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26E0E6EE16BC39A600266B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		26E0E6F016BC39C700266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		26E0E6F116BC39C800266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		26E0E6F216BC39C900266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E0E6DE16BC198300266B84 /* Twitter.framework in Frameworks */,
+				26E0E6D816BC156F00266B84 /* Social.framework in Frameworks */,
 				26722A4F16BB81DD0004F205 /* UIKit.framework in Frameworks */,
 				26722A5116BB81DD0004F205 /* Foundation.framework in Frameworks */,
 				26722A5316BB81DD0004F205 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +131,8 @@
 		26722A4D16BB81DD0004F205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26E0E6DD16BC198300266B84 /* Twitter.framework */,
+				26E0E6D716BC156F00266B84 /* Social.framework */,
 				26722A4E16BB81DD0004F205 /* UIKit.framework */,
 				26722A5016BB81DD0004F205 /* Foundation.framework */,
 				26722A5216BB81DD0004F205 /* CoreGraphics.framework */,
@@ -140,6 +165,7 @@
 				26722A6016BB81DD0004F205 /* Default.png */,
 				26722A6216BB81DD0004F205 /* Default@2x.png */,
 				26722A6416BB81DE0004F205 /* Default-568h@2x.png */,
+				26E0E6EF16BC39A600266B84 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -218,6 +244,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
+				es,
+				de,
 			);
 			mainGroup = 26722A3F16BB81DD0004F205;
 			productRefGroup = 26722A4B16BB81DD0004F205 /* Products */;
@@ -241,6 +270,7 @@
 				26722A6516BB81DE0004F205 /* Default-568h@2x.png in Resources */,
 				26722A6816BB81DE0004F205 /* MainStoryboard_iPhone.storyboard in Resources */,
 				26722A6B16BB81DE0004F205 /* MainStoryboard_iPad.storyboard in Resources */,
+				26E0E6ED16BC39A600266B84 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +334,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				26722A5816BB81DD0004F205 /* en */,
+				26E0E6E116BC376100266B84 /* fr */,
+				26E0E6E516BC376900266B84 /* es */,
+				26E0E6E916BC377400266B84 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -312,6 +345,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				26722A6716BB81DE0004F205 /* en */,
+				26E0E6DF16BC376000266B84 /* fr */,
+				26E0E6E316BC376900266B84 /* es */,
+				26E0E6E716BC377400266B84 /* de */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +356,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				26722A6A16BB81DE0004F205 /* en */,
+				26E0E6E016BC376000266B84 /* fr */,
+				26E0E6E416BC376900266B84 /* es */,
+				26E0E6E816BC377400266B84 /* de */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -328,8 +367,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				26722A7F16BB81DE0004F205 /* en */,
+				26E0E6E216BC376100266B84 /* fr */,
+				26E0E6E616BC376900266B84 /* es */,
+				26E0E6EA16BC377400266B84 /* de */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		26E0E6EF16BC39A600266B84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E0E6EE16BC39A600266B84 /* en */,
+				26E0E6F016BC39C700266B84 /* fr */,
+				26E0E6F116BC39C800266B84 /* es */,
+				26E0E6F216BC39C900266B84 /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -393,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tweetPad/tweetPad-Prefix.pch";
 				INFOPLIST_FILE = "tweetPad/tweetPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tweetPad/tweetPad-Prefix.pch";
 				INFOPLIST_FILE = "tweetPad/tweetPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +517,7 @@
 				26722A8816BB81DE0004F205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26722A8916BB81DE0004F205 /* Build configuration list for PBXNativeTarget "tweetPadTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +526,7 @@
 				26722A8B16BB81DE0004F205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

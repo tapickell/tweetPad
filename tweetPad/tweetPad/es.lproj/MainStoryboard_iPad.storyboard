@@ -25,26 +25,39 @@
                                     <action selector="handleTweetButtonTapped:" destination="2" eventType="touchUpInside" id="HCx-B6-hBG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM1-7m-HzV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or9-TP-xgw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show my tweets">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowMyTweetsTapped:" destination="2" eventType="touchUpInside" id="hW8-gA-uS0"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-7T-sGN">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="566" type="user" id="XVi-Yr-K2Y"/>
+                                    <constraint firstAttribute="height" constant="669" id="aJB-WY-1Uv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IM1-7m-HzV" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="GgL-K0-IOe"/>
-                            <constraint firstItem="IM1-7m-HzV" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="Yll-15-oYn"/>
-                            <constraint firstItem="HBh-aT-PYJ" firstAttribute="centerX" secondItem="IM1-7m-HzV" secondAttribute="centerX" type="default" id="imt-qt-hma"/>
-                            <constraint firstItem="IM1-7m-HzV" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="ksB-aY-7eW"/>
+                            <constraint firstItem="or9-TP-xgw" firstAttribute="centerX" secondItem="HBh-aT-PYJ" secondAttribute="centerX" type="default" id="2oP-To-B33"/>
+                            <constraint firstItem="m7a-7T-sGN" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="8Ef-Da-AZg"/>
+                            <constraint firstItem="m7a-7T-sGN" firstAttribute="centerX" secondItem="or9-TP-xgw" secondAttribute="centerX" type="default" id="SEP-mg-4DA"/>
+                            <constraint firstItem="m7a-7T-sGN" firstAttribute="top" secondItem="5" secondAttribute="top" constant="364" id="ezO-FA-mH6"/>
                             <constraint firstItem="HBh-aT-PYJ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="168" id="sY3-bu-1jL"/>
+                            <constraint firstItem="or9-TP-xgw" firstAttribute="top" secondItem="5" secondAttribute="top" constant="245" id="tgn-jS-CW3"/>
+                            <constraint firstItem="m7a-7T-sGN" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="vdu-WD-LET"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="twitterTextView" destination="IM1-7m-HzV" id="9gT-bv-t9c"/>
+                        <outlet property="twitterWebView" destination="m7a-7T-sGN" id="hFy-B6-Y3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
@@ -58,8 +71,9 @@
         <class className="TAPViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TAPViewController.h"/>
             <relationships>
+                <relationship kind="action" name="handleShowMyTweetsTapped:"/>
                 <relationship kind="action" name="handleTweetButtonTapped:"/>
-                <relationship kind="outlet" name="twitterTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="twitterWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
     </classes>
