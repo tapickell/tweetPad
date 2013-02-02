@@ -27,6 +27,11 @@
 		26E0E6D816BC156F00266B84 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E6D716BC156F00266B84 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		26E0E6DE16BC198300266B84 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E0E6DD16BC198300266B84 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		26E0E6ED16BC39A600266B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6EF16BC39A600266B84 /* Localizable.strings */; };
+		26E0E6F816BCA57500266B84 /* atsymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6F316BCA57400266B84 /* atsymbol.png */; };
+		26E0E6F916BCA57500266B84 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6F416BCA57400266B84 /* edit.png */; };
+		26E0E6FA16BCA57500266B84 /* hashtag.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6F516BCA57400266B84 /* hashtag.png */; };
+		26E0E6FB16BCA57500266B84 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6F616BCA57500266B84 /* home.png */; };
+		26E0E6FC16BCA57500266B84 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E0E6F716BCA57500266B84 /* profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		26E0E6F016BC39C700266B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		26E0E6F116BC39C800266B84 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		26E0E6F216BC39C900266B84 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		26E0E6F316BCA57400266B84 /* atsymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atsymbol.png; sourceTree = "<group>"; };
+		26E0E6F416BCA57400266B84 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		26E0E6F516BCA57400266B84 /* hashtag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hashtag.png; sourceTree = "<group>"; };
+		26E0E6F616BCA57500266B84 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		26E0E6F716BCA57500266B84 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,11 @@
 		26722A5516BB81DD0004F205 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26E0E6F316BCA57400266B84 /* atsymbol.png */,
+				26E0E6F416BCA57400266B84 /* edit.png */,
+				26E0E6F516BCA57400266B84 /* hashtag.png */,
+				26E0E6F616BCA57500266B84 /* home.png */,
+				26E0E6F716BCA57500266B84 /* profile.png */,
 				26722A5616BB81DD0004F205 /* tweetPad-Info.plist */,
 				26722A5716BB81DD0004F205 /* InfoPlist.strings */,
 				26722A5A16BB81DD0004F205 /* main.m */,
@@ -271,6 +286,11 @@
 				26722A6816BB81DE0004F205 /* MainStoryboard_iPhone.storyboard in Resources */,
 				26722A6B16BB81DE0004F205 /* MainStoryboard_iPad.storyboard in Resources */,
 				26E0E6ED16BC39A600266B84 /* Localizable.strings in Resources */,
+				26E0E6F816BCA57500266B84 /* atsymbol.png in Resources */,
+				26E0E6F916BCA57500266B84 /* edit.png in Resources */,
+				26E0E6FA16BCA57500266B84 /* hashtag.png in Resources */,
+				26E0E6FB16BCA57500266B84 /* home.png in Resources */,
+				26E0E6FC16BCA57500266B84 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

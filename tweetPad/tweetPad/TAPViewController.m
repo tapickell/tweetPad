@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self reloadTweets];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -102,8 +103,12 @@
     if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *tweets = (NSArray*) jsonResponse;
+            NSSortDescriptor *sortByText = [NSSortDescriptor sortDescriptorWithKey:@"text" ascending:YES];
+            NSArray *sortDescriptors = @[sortByText];
+            tweets = [tweets sortedArrayUsingDescriptors:sortDescriptors];
             for (NSDictionary *tweetDict in tweets) {
-                NSString *tweetText = [NSString stringWithFormat:@"%@ (%@)",
+                NSString *tweetText = [NSString stringWithFormat:@"%@: %@ (%@)",
+                                       [tweetDict valueForKeyPath:@"user.screen_name"],
                                        [tweetDict valueForKey:@"text"],
                                        [tweetDict valueForKey:@"created_at"]];
                 self.twitterTextView.text = [NSString stringWithFormat:@"%@%@\n\n", self.twitterTextView.text, tweetText];
